@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-01T01:36:39.497312",
+  "numerical_drift": {
+    "amount": {
+      "baseline_mean": 99.6105866,
+      "live_mean": 128.11493990687285,
+      "relative_change": 28.615787016028722,
+      "p_value": 7.709181203220028e-10,
+      "drift_detected": true
+    },
+    "hour": {
+      "baseline_mean": 11.55012,
+      "live_mean": 14.501045534429553,
+      "relative_change": 25.548873383389548,
+      "p_value": 9.803857095159588e-13,
+      "drift_detected": true
+    },
+    "distance": {
+      "baseline_mean": 19.989791999999998,
+      "live_mean": 25.516890135483262,
+      "relative_change": 27.64960303480529,
+      "p_value": 5.728163385319411e-10,
+      "drift_detected": true
+    },
+    "frequency": {
+      "baseline_mean": 25.5979,
+      "live_mean": 30.576312881583643,
+      "relative_change": 19.448520705150205,
+      "p_value": 3.6066664818887265e-11,
+      "drift_detected": true
+    }
+  },
+  "drifted_features": [
+    "amount",
+    "hour",
+    "distance",
+    "frequency"
+  ],
+  "total_features": 4,
+  "summary": "4 out of 4 features drifted",
+  "drift_detected": true
+}

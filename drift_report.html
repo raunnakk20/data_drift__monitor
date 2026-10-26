@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data Drift Report</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f0f0f0; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
+        .alert { background: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        .feature { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; background: #fafafa; }
+        .badge { background: #e74c3c; color: white; padding: 3px 10px; border-radius: 15px; }
+        .stable { background: #27ae60; color: white; padding: 3px 10px; border-radius: 15px; }
+        .footer { margin-top: 30px; color: #7f8c8d; font-size: 12px; border-top: 1px solid #ddd; padding-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Drift Report</h1>
+        <p><strong>Generated:</strong> 2026-09-01 01:37:51</p>
+        <p><strong>Status:</strong> DRIFT DETECTED</p>
+        
+        <div class="alert">
+            <h2>Summary</h2>
+            <p>4 out of 4 features drifted</p>
+        </div>
+        
+        <h2>Feature Analysis</h2>
+
+        <div class="feature">
+            <h3>AMOUNT <span class="badge">DRIFT</span></h3>
+            <p><strong>Change:</strong> +28.6%</p>
+            <p><strong>P-Value:</strong> 0.0000</p>
+            <p><strong>Baseline:</strong> 99.61 -> <strong>Current:</strong> 128.11</p>
+        </div>
+
+        <div class="feature">
+            <h3>HOUR <span class="badge">DRIFT</span></h3>
+            <p><strong>Change:</strong> +25.5%</p>
+            <p><strong>P-Value:</strong> 0.0000</p>
+            <p><strong>Baseline:</strong> 11.55 -> <strong>Current:</strong> 14.50</p>
+        </div>
+
+        <div class="feature">
+            <h3>DISTANCE <span class="badge">DRIFT</span></h3>
+            <p><strong>Change:</strong> +27.6%</p>
+            <p><strong>P-Value:</strong> 0.0000</p>
+            <p><strong>Baseline:</strong> 19.99 -> <strong>Current:</strong> 25.52</p>
+        </div>
+
+        <div class="feature">
+            <h3>FREQUENCY <span class="badge">DRIFT</span></h3>
+            <p><strong>Change:</strong> +19.4%</p>
+            <p><strong>P-Value:</strong> 0.0000</p>
+            <p><strong>Baseline:</strong> 25.60 -> <strong>Current:</strong> 30.58</p>
+        </div>
+
+        <div class="footer">
+            <p>Data Drift Monitor | AI Reporter</p>
+        </div>
+    </div>
+</body>
+</html>
